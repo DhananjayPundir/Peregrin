@@ -5,5 +5,16 @@
     "express": "^4.21.1",
     "leaflet": "^1.9.4",
     "react-leaflet": "^4.2.1"
+  },
+  
+  "name": "mern-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
   }
 }
